@@ -1,18 +1,18 @@
 //
-//  FirstViewController.m
+//  GiveViewController.m
 //  Hunger No More
 //
 //  Created by John Luttig on 7/13/13.
 //  Copyright (c) 2013 Hackathon. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "GiveViewController.h"
 
-@interface FirstViewController ()
+@interface GiveViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation GiveViewController
 
 - (void)viewDidLoad
 {

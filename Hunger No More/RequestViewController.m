@@ -1,18 +1,18 @@
 //
-//  SecondViewController.m
+//  RequestViewController.m
 //  Hunger No More
 //
 //  Created by John Luttig on 7/13/13.
 //  Copyright (c) 2013 Hackathon. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "RequestViewController.h"
 
-@interface SecondViewController ()
+@interface RequestViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation RequestViewController
 
 - (void)viewDidLoad
 {

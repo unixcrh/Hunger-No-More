@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  FulfillViewController.h
 //  Hunger No More
 //
 //  Created by John Luttig on 7/13/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface FulfillViewController : UIViewController
 
 @end

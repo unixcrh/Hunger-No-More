@@ -17,17 +17,19 @@
 		52156F9F1791BE7500000D44 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52156F9E1791BE7500000D44 /* Default@2x.png */; };
 		52156FA11791BE7500000D44 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52156FA01791BE7500000D44 /* Default-568h@2x.png */; };
 		52156FA41791BE7500000D44 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52156FA21791BE7500000D44 /* MainStoryboard.storyboard */; };
-		52156FA71791BE7500000D44 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52156FA61791BE7500000D44 /* FirstViewController.m */; };
-		52156FA91791BE7500000D44 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 52156FA81791BE7500000D44 /* first.png */; };
-		52156FAB1791BE7500000D44 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52156FAA1791BE7500000D44 /* first@2x.png */; };
-		52156FAE1791BE7500000D44 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52156FAD1791BE7500000D44 /* SecondViewController.m */; };
-		52156FB01791BE7500000D44 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 52156FAF1791BE7500000D44 /* second.png */; };
-		52156FB21791BE7500000D44 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52156FB11791BE7500000D44 /* second@2x.png */; };
+		52156FA71791BE7500000D44 /* GiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52156FA61791BE7500000D44 /* GiveViewController.m */; };
+		52156FAE1791BE7500000D44 /* RequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52156FAD1791BE7500000D44 /* RequestViewController.m */; };
 		52156FBA1791BE7500000D44 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52156FB91791BE7500000D44 /* SenTestingKit.framework */; };
 		52156FBB1791BE7500000D44 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52156F8A1791BE7500000D44 /* UIKit.framework */; };
 		52156FBC1791BE7500000D44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52156F8C1791BE7500000D44 /* Foundation.framework */; };
 		52156FC41791BE7500000D44 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52156FC21791BE7500000D44 /* InfoPlist.strings */; };
 		52156FC71791BE7500000D44 /* Hunger_No_MoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52156FC61791BE7500000D44 /* Hunger_No_MoreTests.m */; };
+		52156FD21791C26F00000D44 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52156FD11791C26F00000D44 /* SettingsViewController.m */; };
+		52156FD51791C2FB00000D44 /* FulfillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52156FD41791C2FB00000D44 /* FulfillViewController.m */; };
+		52156FE31791CBDC00000D44 /* fulfill.png in Resources */ = {isa = PBXBuildFile; fileRef = 52156FE21791CBDC00000D44 /* fulfill.png */; };
+		52156FE51791CC3000000D44 /* give.png in Resources */ = {isa = PBXBuildFile; fileRef = 52156FE41791CC3000000D44 /* give.png */; };
+		52156FE71791CCF200000D44 /* request.png in Resources */ = {isa = PBXBuildFile; fileRef = 52156FE61791CCF200000D44 /* request.png */; };
+		52156FE91791CDB900000D44 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 52156FE81791CDB900000D44 /* settings.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,20 +57,24 @@
 		52156F9E1791BE7500000D44 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		52156FA01791BE7500000D44 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		52156FA31791BE7500000D44 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		52156FA51791BE7500000D44 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		52156FA61791BE7500000D44 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		52156FA81791BE7500000D44 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		52156FAA1791BE7500000D44 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		52156FAC1791BE7500000D44 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		52156FAD1791BE7500000D44 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		52156FAF1791BE7500000D44 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		52156FB11791BE7500000D44 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		52156FA51791BE7500000D44 /* GiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GiveViewController.h; sourceTree = "<group>"; };
+		52156FA61791BE7500000D44 /* GiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GiveViewController.m; sourceTree = "<group>"; };
+		52156FAC1791BE7500000D44 /* RequestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestViewController.h; sourceTree = "<group>"; };
+		52156FAD1791BE7500000D44 /* RequestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestViewController.m; sourceTree = "<group>"; };
 		52156FB81791BE7500000D44 /* Hunger No MoreTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hunger No MoreTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52156FB91791BE7500000D44 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		52156FC11791BE7500000D44 /* Hunger No MoreTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Hunger No MoreTests-Info.plist"; sourceTree = "<group>"; };
 		52156FC31791BE7500000D44 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		52156FC51791BE7500000D44 /* Hunger_No_MoreTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hunger_No_MoreTests.h; sourceTree = "<group>"; };
 		52156FC61791BE7500000D44 /* Hunger_No_MoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hunger_No_MoreTests.m; sourceTree = "<group>"; };
+		52156FD01791C26F00000D44 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		52156FD11791C26F00000D44 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		52156FD31791C2FB00000D44 /* FulfillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FulfillViewController.h; sourceTree = "<group>"; };
+		52156FD41791C2FB00000D44 /* FulfillViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FulfillViewController.m; sourceTree = "<group>"; };
+		52156FE21791CBDC00000D44 /* fulfill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fulfill.png; path = ../fulfill.png; sourceTree = "<group>"; };
+		52156FE41791CC3000000D44 /* give.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = give.png; sourceTree = "<group>"; };
+		52156FE61791CCF200000D44 /* request.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = request.png; sourceTree = "<group>"; };
+		52156FE81791CDB900000D44 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,14 +137,14 @@
 				52156F991791BE7500000D44 /* AppDelegate.h */,
 				52156F9A1791BE7500000D44 /* AppDelegate.m */,
 				52156FA21791BE7500000D44 /* MainStoryboard.storyboard */,
-				52156FA51791BE7500000D44 /* FirstViewController.h */,
-				52156FA61791BE7500000D44 /* FirstViewController.m */,
-				52156FA81791BE7500000D44 /* first.png */,
-				52156FAA1791BE7500000D44 /* first@2x.png */,
-				52156FAC1791BE7500000D44 /* SecondViewController.h */,
-				52156FAD1791BE7500000D44 /* SecondViewController.m */,
-				52156FAF1791BE7500000D44 /* second.png */,
-				52156FB11791BE7500000D44 /* second@2x.png */,
+				52156FD01791C26F00000D44 /* SettingsViewController.h */,
+				52156FD11791C26F00000D44 /* SettingsViewController.m */,
+				52156FA51791BE7500000D44 /* GiveViewController.h */,
+				52156FA61791BE7500000D44 /* GiveViewController.m */,
+				52156FAC1791BE7500000D44 /* RequestViewController.h */,
+				52156FAD1791BE7500000D44 /* RequestViewController.m */,
+				52156FD31791C2FB00000D44 /* FulfillViewController.h */,
+				52156FD41791C2FB00000D44 /* FulfillViewController.m */,
 				52156F911791BE7500000D44 /* Supporting Files */,
 			);
 			path = "Hunger No More";
@@ -147,6 +153,10 @@
 		52156F911791BE7500000D44 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				52156FE81791CDB900000D44 /* settings.png */,
+				52156FE61791CCF200000D44 /* request.png */,
+				52156FE41791CC3000000D44 /* give.png */,
+				52156FE21791CBDC00000D44 /* fulfill.png */,
 				52156F921791BE7500000D44 /* Hunger No More-Info.plist */,
 				52156F931791BE7500000D44 /* InfoPlist.strings */,
 				52156F961791BE7500000D44 /* main.m */,
@@ -253,10 +263,10 @@
 				52156F9F1791BE7500000D44 /* Default@2x.png in Resources */,
 				52156FA11791BE7500000D44 /* Default-568h@2x.png in Resources */,
 				52156FA41791BE7500000D44 /* MainStoryboard.storyboard in Resources */,
-				52156FA91791BE7500000D44 /* first.png in Resources */,
-				52156FAB1791BE7500000D44 /* first@2x.png in Resources */,
-				52156FB01791BE7500000D44 /* second.png in Resources */,
-				52156FB21791BE7500000D44 /* second@2x.png in Resources */,
+				52156FE31791CBDC00000D44 /* fulfill.png in Resources */,
+				52156FE51791CC3000000D44 /* give.png in Resources */,
+				52156FE71791CCF200000D44 /* request.png in Resources */,
+				52156FE91791CDB900000D44 /* settings.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,8 +303,10 @@
 			files = (
 				52156F971791BE7500000D44 /* main.m in Sources */,
 				52156F9B1791BE7500000D44 /* AppDelegate.m in Sources */,
-				52156FA71791BE7500000D44 /* FirstViewController.m in Sources */,
-				52156FAE1791BE7500000D44 /* SecondViewController.m in Sources */,
+				52156FA71791BE7500000D44 /* GiveViewController.m in Sources */,
+				52156FAE1791BE7500000D44 /* RequestViewController.m in Sources */,
+				52156FD21791C26F00000D44 /* SettingsViewController.m in Sources */,
+				52156FD51791C2FB00000D44 /* FulfillViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

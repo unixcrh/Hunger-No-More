@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  GiveViewController.h
 //  Hunger No More
 //
 //  Created by John Luttig on 7/13/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface GiveViewController : UIViewController
 
 @end
