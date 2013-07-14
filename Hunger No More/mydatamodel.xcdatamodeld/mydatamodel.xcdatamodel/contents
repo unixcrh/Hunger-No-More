@@ -1,9 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Offer" syncable="YES">
+        <attribute name="allergyinfo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="amount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactemail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="metric" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="offer_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="offerdescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="offertype" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pickupaddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pickupcity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pickuplatitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pickuplongitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pickupstate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pickupzip" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usebydate" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="Request" syncable="YES">
+        <attribute name="contactemail" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="neededbydate" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="orgaddress" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="orgcity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orglatitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orglongitude" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="orgname" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="orgstate" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="orgwebsite" optional="YES" attributeType="String" syncable="YES"/>
@@ -13,6 +33,7 @@
         <attribute name="requestdescription" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Request" positionX="160" positionY="192" width="128" height="195"/>
+        <element name="Request" positionX="160" positionY="192" width="128" height="240"/>
+        <element name="Offer" positionX="160" positionY="192" width="128" height="270"/>
     </elements>
 </model>

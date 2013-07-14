@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PreferencesViewController : UIViewController
+@interface PreferencesViewController : UIViewController <UITextFieldDelegate>
+
+@property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
+@property (nonatomic, retain) IBOutlet UITextField *emailField;
+@property (nonatomic, retain) IBOutlet UITextField *addressField;
+@property (nonatomic, retain) IBOutlet UITextField *cityField;
+@property (nonatomic, retain) IBOutlet UITextField *stateField;
+@property (nonatomic, retain) IBOutlet UITextField *zipField;
+@property (nonatomic, retain) IBOutlet UITextField *nameField;
+
+-(void)done;
 
 @end

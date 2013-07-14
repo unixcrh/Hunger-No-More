@@ -15,7 +15,7 @@
 
 @implementation RequestViewController
 
-@synthesize personNameField, organizationAddressField, organizationCityField, organizationNameField, organizationStateField, organizationWebsiteField, organizationZIPField, requestDescriptionField, neededByPicker, submitButton, scrollView;
+@synthesize personNameField, organizationAddressField, organizationCityField, organizationNameField, organizationStateField, organizationWebsiteField, organizationZIPField, requestDescriptionField, neededByPicker, submitButton, scrollView, placemark, contactEmailField;
 
 @synthesize managedObjectContext = _managedObjectContext;
 
@@ -29,7 +29,10 @@
     return self;
 }
 
-
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self.scrollView setContentOffset:CGPointZero];
+}
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
     //CGPoint svos = scrollView.contentOffset;
@@ -72,6 +75,38 @@
 {
     [super viewDidLoad];
 	self.managedObjectContext = [[[SMClient defaultClient] coreDataStore] contextForCurrentThread];
+    
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"email"] != nil) {
+        [contactEmailField setText:[[NSUserDefaults standardUserDefaults] objectForKey: @"email"]];
+    }
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"name"] != nil) {
+        [personNameField setText:[[NSUserDefaults standardUserDefaults] objectForKey: @"name"]];
+    }
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"address"] != nil) {
+        [organizationAddressField setText:[[NSUserDefaults standardUserDefaults] objectForKey: @"address"]];
+    }
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"city"] != nil) {
+        [organizationCityField setText:[[NSUserDefaults standardUserDefaults] objectForKey: @"city"]];
+    }
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"state"] != nil) {
+        [organizationStateField setText:[[NSUserDefaults standardUserDefaults] objectForKey: @"state"]];
+    }
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"zip"] != nil) {
+        [organizationZIPField setText:[[NSUserDefaults standardUserDefaults] objectForKey: @"zip"]];
+    }
+    UIImageView *backgroundImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logoplainlarge.png"]];
+    backgroundImage.frame = CGRectMake(backgroundImage.frame.origin.x-40, backgroundImage.frame.origin.y+200, backgroundImage.frame.size.width, backgroundImage.frame.size.height);
+    backgroundImage.alpha = 0.3;
+    
+    [self.view addSubview:backgroundImage];
+    [self.view sendSubviewToBack:backgroundImage];
+    
+    submitButton.faceColor = [UIColor colorWithRed:86.0/255.0 green:161.0/255.0 blue:217.0/255.0 alpha:1.0];
+    submitButton.sideColor = [UIColor colorWithRed:79.0/255.0 green:127.0/255.0 blue:179.0/255.0 alpha:1.0];
+    submitButton.radius = 8.0;
+    submitButton.margin = 4.0;
+    submitButton.depth = 3.0;
+    [submitButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning
@@ -90,7 +125,8 @@
         [organizationAddressField.text isEqualToString:@""] ||
         [organizationCityField.text isEqualToString:@""] ||
         [organizationStateField.text isEqualToString:@""] ||
-        [organizationZIPField.text isEqualToString:@""]) {
+        [organizationZIPField.text isEqualToString:@""] ||
+        [contactEmailField.text isEqualToString:@""]) {
         UIAlertView *incompleteAlert = [[UIAlertView alloc] initWithTitle:@"Incomplete Form" message:@"Please check to make sure all required fields are complete." delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles: nil];
         [incompleteAlert show];
         return;
@@ -101,6 +137,7 @@
     [request setObject:organizationCityField.text forKey:@"OrgCity"];
     [request setObject:organizationStateField.text forKey:@"OrgState"];
     [request setObject:organizationZIPField.text forKey:@"OrgZIP"];
+    [request setObject:contactEmailField.text forKey:@"ContactEmail"];
     
     NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
@@ -163,11 +200,29 @@
     if (![[request objectForKey:@"NeededByDate"] isEqualToString:@""]) {
         [newManagedObject setValue:[request objectForKey:@"NeededByDate"] forKey:@"neededbydate"];
     }
+    if (![[request objectForKey:@"ContactEmail"] isEqualToString:@""]) {
+        [newManagedObject setValue:[request objectForKey:@"ContactEmail"] forKey:@"contactemail"];
+    }
     
-    //[newManagedObject setValue:requestBinaryData forKey:@"request"];
+    CLGeocoder *geocoder = [[CLGeocoder alloc] init];
+    NSString *locationName = [NSString stringWithFormat:@"%@ %@, %@ %@", [request objectForKey:@"OrgAddress"], [request objectForKey:@"OrgCity"], [request objectForKey:@"OrgState"], [request objectForKey:@"OrgZIP"]];
     
-    NSLog(@"6");
-    //[newManagedObject setValue:[NSString stringWithFormat:@"request"] forKey:@"title"];
+    [geocoder geocodeAddressString:locationName completionHandler:^(NSArray *placemarks, NSError *error) {
+        //Error checking
+        //NSLog(@"placemarks: %@", placemarks);
+        [self setPlacemark:[placemarks objectAtIndex:0]];
+        NSLog(@"placemark: %@", placemark);
+        
+        NSString *latString = [NSString stringWithFormat:@"%f", self.placemark.region.center.latitude];
+        NSString *lonString = [NSString stringWithFormat:@"%f", self.placemark.region.center.longitude];
+        [newManagedObject setValue:latString forKey:@"orglatitude"];
+        [newManagedObject setValue:lonString forKey:@"orglongitude"];
+        [self saveOffer:newManagedObject];
+    }];
+}
+
+- (void)saveOffer:(NSManagedObject *)newManagedObject
+{
     NSLog(@"objID: %@", [newManagedObject primaryKeyField]);
     [newManagedObject setValue:[newManagedObject assignObjectId] forKey:[newManagedObject primaryKeyField]];
     

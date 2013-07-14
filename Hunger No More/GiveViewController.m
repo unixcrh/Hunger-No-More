@@ -2,7 +2,7 @@
 //  GiveViewController.m
 //  Hunger No More
 //
-//  Created by John Luttig on 7/13/13.
+//  Created by John Luttig on 7/14/13.
 //  Copyright (c) 2013 Hackathon. All rights reserved.
 //
 
@@ -10,20 +10,15 @@
 
 @interface GiveViewController ()
 
-
 @end
 
 @implementation GiveViewController
-
-@synthesize typePicker, descriptionField, metricPicker, amountField, allergyField, usebyPicker, pictureButton, submitButton;
-
-#pragma mark - System Methods
+@synthesize itemsButton, moneyButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
     }
     return self;
 }
@@ -31,11 +26,32 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    typeArray = [NSArray arrayWithObjects:@"Meat", @"Fish", @"Grain", @"Fruit", @"Vegetable", @"Dessert", @"Other", nil];
-    metricArray = [NSArray arrayWithObjects:@"Pounds", @"Kilograms", @"Grams", @"Servings", nil];
-    [typePicker reloadAllComponents];
-    [metricPicker reloadAllComponents];
-	// Do any additional setup after loading the view, typically from a nib.
+    [[QBFlatButton appearance] setFaceColor:[UIColor colorWithWhite:0.75 alpha:1.0] forState:UIControlStateDisabled];
+    [[QBFlatButton appearance] setSideColor:[UIColor colorWithWhite:0.55 alpha:1.0] forState:UIControlStateDisabled];
+    
+    itemsButton.faceColor = [UIColor colorWithRed:86.0/255.0 green:161.0/255.0 blue:217.0/255.0 alpha:1.0];
+    itemsButton.sideColor = [UIColor colorWithRed:79.0/255.0 green:127.0/255.0 blue:179.0/255.0 alpha:1.0];
+    itemsButton.radius = 8.0;
+    itemsButton.margin = 4.0;
+    itemsButton.depth = 3.0;
+    [itemsButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    
+    
+    moneyButton.faceColor = [UIColor colorWithRed:86.0/255.0 green:161.0/255.0 blue:217.0/255.0 alpha:1.0];
+    moneyButton.sideColor = [UIColor colorWithRed:79.0/255.0 green:127.0/255.0 blue:179.0/255.0 alpha:1.0];
+    moneyButton.radius = 8.0;
+    moneyButton.margin = 4.0;
+    moneyButton.depth = 3.0;
+    [moneyButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    
+    UIImageView *backgroundImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logoplainlarge.png"]];
+    backgroundImage.frame = CGRectMake(backgroundImage.frame.origin.x-40, backgroundImage.frame.origin.y+200, backgroundImage.frame.size.width, backgroundImage.frame.size.height);
+    backgroundImage.alpha = 0.3;
+    
+    [self.view addSubview:backgroundImage];
+    [self.view sendSubviewToBack:backgroundImage];
+    //btn.titleLabel.font = [UIFont boldSystemFontOfSize:16];
+    //[btn setTitle:@"Button" forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,127 +60,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - PickerView Methods
-
-- (int)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+- (void)dismissView
 {
-    return 1;
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField
-{
-    [textField resignFirstResponder];
-    return YES;
-}
-
-- (NSString*)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
-{
-    NSString *title = @"error";
-    
-    switch ([pickerView tag]) {
-        case TAGTYPEPICKER:
-            title = [typeArray objectAtIndex:row];
-            break;
-        case TAGMETRICPICKER:
-            title = [metricArray objectAtIndex:row];
-            break;
-        default:
-            title = @"error";
-            break;
-    }
-    return title;
-}
-
-- (int)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
-{
-    switch ([pickerView tag]) {
-            case TAGTYPEPICKER:
-                return [typeArray count];
-            case TAGMETRICPICKER:
-                return [metricArray count];
-            default:
-                return 0;
-    }
-    
-}
-
-#pragma mark - IBActions
-
-//- (IBAction)submit:(id)sender
-//{
-//    //submit request in give request - STACKMOB
-//    //form request ID when submitted to match fulfillment requests
-//    NSDictionary *offer = [[]
-//}
-//                           
-//-(void)uploadOffer:(NSDictionary*) request
-//{
-//    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Request" inManagedObjectContext:self.managedObjectContext];
-//    
-//    __block NSManagedObject *newManagedObject = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:self.managedObjectContext];
-//    
-//    //NSData *requestData = [NSKeyedArchiver archivedDataWithRootObject:request];
-//    // Convert the binary data to string to save on Amazon S3
-//    //NSString *requestBinaryData = [SMBinaryDataConversion stringForBinaryData:requestData name:@"requestData.txt" contentType:@"text"];
-//    
-//    //[newManagedObject setValue:[newManagedObject assignObjectId] forKey:￼]
-//    
-//    if (![[request objectForKey:@"OrgName"] isEqualToString:@""]) {
-//        [newManagedObject setValue:[request objectForKey:@"OrgName"] forKey:@"orgname"];
-//    }
-//    if (![[request objectForKey:@"OrgAddress"] isEqualToString:@""]) {
-//        [newManagedObject setValue:[request objectForKey:@"OrgAddress"] forKey:@"orgaddress"];
-//    }
-//    if (![[request objectForKey:@"OrgCity"] isEqualToString:@""]) {
-//        [newManagedObject setValue:[request objectForKey:@"OrgCity"] forKey:@"orgcity"];
-//    }
-//    if (![[request objectForKey:@"OrgState"] isEqualToString:@""]) {
-//        [newManagedObject setValue:[request objectForKey:@"OrgState"] forKey:@"orgstate"];
-//    }
-//    if (![[request objectForKey:@"OrgZIP"] isEqualToString:@""]) {
-//        [newManagedObject setValue:[request objectForKey:@"OrgZIP"] forKey:@"orgzip"];
-//    }
-//    if (![[request objectForKey:@"OrgWebsite"] isEqualToString:@""]) {
-//        [newManagedObject setValue:[request objectForKey:@"OrgWebsite"] forKey:@"orgwebsite"];
-//    }
-//    if (![[request objectForKey:@"RequestDescription"] isEqualToString:@""]) {
-//        [newManagedObject setValue:[request objectForKey:@"RequestDescription"] forKey:@"requestdescription"];
-//    }
-//    if (![[request objectForKey:@"PersonName"] isEqualToString:@""]) {
-//        [newManagedObject setValue:[request objectForKey:@"PersonName"] forKey:@"personname"];
-//    }
-//    if (![[request objectForKey:@"NeededByDate"] isEqualToString:@""]) {
-//        [newManagedObject setValue:[request objectForKey:@"NeededByDate"] forKey:@"neededbydate"];
-//    }
-//    
-//    //[newManagedObject setValue:requestBinaryData forKey:@"request"];
-//    
-//    NSLog(@"6");
-//    //[newManagedObject setValue:[NSString stringWithFormat:@"request"] forKey:@"title"];
-//    NSLog(@"objID: %@", [newManagedObject primaryKeyField]);
-//    [newManagedObject setValue:[newManagedObject assignObjectId] forKey:[newManagedObject primaryKeyField]];
-//    
-//    NSLog(@"7");
-//    // Save the context.
-//    [self.managedObjectContext saveOnSuccess:^{
-//        [self.managedObjectContext refreshObject:newManagedObject mergeChanges:YES];
-//        NSLog(@"Saved request!");
-//    } onFailure:^(NSError *error) {
-//        NSLog(@"Error saving: %@", error);
-//    }];
-//}
-
-
-- (IBAction)selectPicture:(id)sender
-{
-    //load pictureViewController
-    //result saves to donationImage
-}
-
-- (IBAction)removeKeyboard:(id)sender
-{
-    //broken?!??!?
-    NSLog(@"touched up inside");
-    [self.view endEditing:YES];
-}
 @end

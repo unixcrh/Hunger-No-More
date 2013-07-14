@@ -14,7 +14,7 @@
 		52156F971791BE7500000D44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52156F961791BE7500000D44 /* main.m */; };
 		52156F9B1791BE7500000D44 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52156F9A1791BE7500000D44 /* AppDelegate.m */; };
 		52156FA41791BE7500000D44 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52156FA21791BE7500000D44 /* MainStoryboard.storyboard */; };
-		52156FA71791BE7500000D44 /* GiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52156FA61791BE7500000D44 /* GiveViewController.m */; };
+		52156FA71791BE7500000D44 /* GiveItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52156FA61791BE7500000D44 /* GiveItemsViewController.m */; };
 		52156FAE1791BE7500000D44 /* RequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52156FAD1791BE7500000D44 /* RequestViewController.m */; };
 		52156FBA1791BE7500000D44 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52156FB91791BE7500000D44 /* SenTestingKit.framework */; };
 		52156FBB1791BE7500000D44 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52156F8A1791BE7500000D44 /* UIKit.framework */; };
@@ -37,6 +37,27 @@
 		5215704217921EAA00000D44 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5215704017921EA000000D44 /* SystemConfiguration.framework */; };
 		5215704517921EBD00000D44 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5215704317921EB600000D44 /* MobileCoreServices.framework */; };
 		52157048179227EB00000D44 /* mydatamodel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52157046179227EB00000D44 /* mydatamodel.xcdatamodeld */; };
+		5215704A179275DB00000D44 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52157049179275DB00000D44 /* Default-568h@2x.png */; };
+		5215704E17927F9500000D44 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5215704D17927F9400000D44 /* icon.png */; };
+		521570501792804300000D44 /* iconsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 5215704F1792804300000D44 /* iconsmall.png */; };
+		5215705717928C7A00000D44 /* FulfillRequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5215705517928C7A00000D44 /* FulfillRequestViewController.m */; };
+		5215705817928C7A00000D44 /* FulfillRequestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5215705617928C7A00000D44 /* FulfillRequestViewController.xib */; };
+		5215705B17929E5300000D44 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5215705917929E4700000D44 /* MessageUI.framework */; };
+		5215705E1792A84E00000D44 /* GiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5215705D1792A84E00000D44 /* GiveViewController.m */; };
+		521570611792B24800000D44 /* GiveMoneyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 521570601792B24800000D44 /* GiveMoneyViewController.m */; };
+		5215706B1792B43D00000D44 /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5215706A1792B43D00000D44 /* libPayPalMobile.a */; };
+		5215706E1792B45B00000D44 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5215706C1792B45000000D44 /* AVFoundation.framework */; };
+		521570711792B47000000D44 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5215706F1792B46600000D44 /* AudioToolbox.framework */; };
+		521570741792B48600000D44 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521570721792B47A00000D44 /* CoreMedia.framework */; };
+		521570771792B49A00000D44 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521570751792B49000000D44 /* CoreVideo.framework */; };
+		521570791792B4A200000D44 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 521570781792B4A200000D44 /* libxml2.dylib */; };
+		5215707B1792B4D400000D44 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5215707A1792B4D400000D44 /* OpenGLES.framework */; };
+		5215707D1792B4F000000D44 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5215707C1792B4F000000D44 /* QuartzCore.framework */; };
+		521570831792BE2200000D44 /* QBFlatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 521570821792BE2200000D44 /* QBFlatButton.m */; };
+		521570841792BE6E00000D44 /* QBFlatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 521570821792BE2200000D44 /* QBFlatButton.m */; };
+		521570861792C09400000D44 /* logoplainlarge.png in Resources */ = {isa = PBXBuildFile; fileRef = 521570851792C09400000D44 /* logoplainlarge.png */; };
+		5215708A1792E9C000000D44 /* FulfillOfferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 521570881792E9BF00000D44 /* FulfillOfferViewController.m */; };
+		5215708B1792E9C000000D44 /* FulfillOfferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 521570891792E9C000000D44 /* FulfillOfferViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +82,8 @@
 		52156F991791BE7500000D44 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		52156F9A1791BE7500000D44 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		52156FA31791BE7500000D44 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		52156FA51791BE7500000D44 /* GiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GiveViewController.h; sourceTree = "<group>"; };
-		52156FA61791BE7500000D44 /* GiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GiveViewController.m; sourceTree = "<group>"; };
+		52156FA51791BE7500000D44 /* GiveItemsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GiveItemsViewController.h; sourceTree = "<group>"; };
+		52156FA61791BE7500000D44 /* GiveItemsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GiveItemsViewController.m; sourceTree = "<group>"; };
 		52156FAC1791BE7500000D44 /* RequestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestViewController.h; sourceTree = "<group>"; };
 		52156FAD1791BE7500000D44 /* RequestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestViewController.m; sourceTree = "<group>"; };
 		52156FB81791BE7500000D44 /* Hunger No MoreTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hunger No MoreTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +161,35 @@
 		5215704017921EA000000D44 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		5215704317921EB600000D44 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		52157047179227EB00000D44 /* mydatamodel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = mydatamodel.xcdatamodel; sourceTree = "<group>"; };
+		52157049179275DB00000D44 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		5215704D17927F9400000D44 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		5215704F1792804300000D44 /* iconsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconsmall.png; sourceTree = "<group>"; };
+		5215705417928C7A00000D44 /* FulfillRequestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FulfillRequestViewController.h; sourceTree = "<group>"; };
+		5215705517928C7A00000D44 /* FulfillRequestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FulfillRequestViewController.m; sourceTree = "<group>"; };
+		5215705617928C7A00000D44 /* FulfillRequestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FulfillRequestViewController.xib; sourceTree = "<group>"; };
+		5215705917929E4700000D44 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		5215705C1792A84E00000D44 /* GiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiveViewController.h; sourceTree = "<group>"; };
+		5215705D1792A84E00000D44 /* GiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiveViewController.m; sourceTree = "<group>"; };
+		5215705F1792B24800000D44 /* GiveMoneyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiveMoneyViewController.h; sourceTree = "<group>"; };
+		521570601792B24800000D44 /* GiveMoneyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiveMoneyViewController.m; sourceTree = "<group>"; };
+		521570631792B3D200000D44 /* libPayPalMobile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPayPalMobile.a; sourceTree = "<group>"; };
+		521570641792B3D200000D44 /* PayPalMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalMobile.h; sourceTree = "<group>"; };
+		521570651792B3D200000D44 /* PayPalPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPayment.h; sourceTree = "<group>"; };
+		521570661792B3D200000D44 /* PayPalPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPaymentViewController.h; sourceTree = "<group>"; };
+		5215706A1792B43D00000D44 /* libPayPalMobile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPayPalMobile.a; sourceTree = "<group>"; };
+		5215706C1792B45000000D44 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5215706F1792B46600000D44 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		521570721792B47A00000D44 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		521570751792B49000000D44 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		521570781792B4A200000D44 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		5215707A1792B4D400000D44 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		5215707C1792B4F000000D44 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		521570811792BE2200000D44 /* QBFlatButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBFlatButton.h; sourceTree = "<group>"; };
+		521570821792BE2200000D44 /* QBFlatButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBFlatButton.m; sourceTree = "<group>"; };
+		521570851792C09400000D44 /* logoplainlarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoplainlarge.png; sourceTree = "<group>"; };
+		521570871792E9BE00000D44 /* FulfillOfferViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FulfillOfferViewController.h; sourceTree = "<group>"; };
+		521570881792E9BF00000D44 /* FulfillOfferViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FulfillOfferViewController.m; sourceTree = "<group>"; };
+		521570891792E9C000000D44 /* FulfillOfferViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FulfillOfferViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +198,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5215704517921EBD00000D44 /* MobileCoreServices.framework in Frameworks */,
+				521570711792B47000000D44 /* AudioToolbox.framework in Frameworks */,
+				5215707D1792B4F000000D44 /* QuartzCore.framework in Frameworks */,
+				5215707B1792B4D400000D44 /* OpenGLES.framework in Frameworks */,
+				521570771792B49A00000D44 /* CoreVideo.framework in Frameworks */,
+				5215706E1792B45B00000D44 /* AVFoundation.framework in Frameworks */,
+				521570741792B48600000D44 /* CoreMedia.framework in Frameworks */,
+				5215705B17929E5300000D44 /* MessageUI.framework in Frameworks */,
+				521570791792B4A200000D44 /* libxml2.dylib in Frameworks */,
 				5215704217921EAA00000D44 /* SystemConfiguration.framework in Frameworks */,
 				5215703D17921E7C00000D44 /* Security.framework in Frameworks */,
 				5215703A17921E6200000D44 /* CoreData.framework in Frameworks */,
@@ -157,6 +215,7 @@
 				52156F8D1791BE7500000D44 /* Foundation.framework in Frameworks */,
 				52156F8F1791BE7500000D44 /* CoreGraphics.framework in Frameworks */,
 				5215703717921E3400000D44 /* libstackmob-v2.0.0.a in Frameworks */,
+				5215706B1792B43D00000D44 /* libPayPalMobile.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +235,12 @@
 		52156F7E1791BE7500000D44 = {
 			isa = PBXGroup;
 			children = (
+				521570811792BE2200000D44 /* QBFlatButton.h */,
+				521570821792BE2200000D44 /* QBFlatButton.m */,
+				5215706A1792B43D00000D44 /* libPayPalMobile.a */,
+				521570621792B3D200000D44 /* PayPalMobile */,
+				5215704F1792804300000D44 /* iconsmall.png */,
+				5215704D17927F9400000D44 /* icon.png */,
 				52156FFE17921E3400000D44 /* StackMob-v2.0.0 */,
 				52156F901791BE7500000D44 /* Hunger No More */,
 				52156FBF1791BE7500000D44 /* Hunger No MoreTests */,
@@ -196,6 +261,14 @@
 		52156F891791BE7500000D44 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				521570781792B4A200000D44 /* libxml2.dylib */,
+				5215707C1792B4F000000D44 /* QuartzCore.framework */,
+				5215707A1792B4D400000D44 /* OpenGLES.framework */,
+				521570751792B49000000D44 /* CoreVideo.framework */,
+				521570721792B47A00000D44 /* CoreMedia.framework */,
+				5215706F1792B46600000D44 /* AudioToolbox.framework */,
+				5215706C1792B45000000D44 /* AVFoundation.framework */,
+				5215705917929E4700000D44 /* MessageUI.framework */,
 				5215704317921EB600000D44 /* MobileCoreServices.framework */,
 				5215704017921EA000000D44 /* SystemConfiguration.framework */,
 				5215703B17921E6F00000D44 /* Security.framework */,
@@ -213,13 +286,23 @@
 		52156F901791BE7500000D44 /* Hunger No More */ = {
 			isa = PBXGroup;
 			children = (
+				52156FA21791BE7500000D44 /* MainStoryboard.storyboard */,
 				52156F991791BE7500000D44 /* AppDelegate.h */,
 				52156F9A1791BE7500000D44 /* AppDelegate.m */,
-				52156FA21791BE7500000D44 /* MainStoryboard.storyboard */,
-				52156FA51791BE7500000D44 /* GiveViewController.h */,
-				52156FA61791BE7500000D44 /* GiveViewController.m */,
+				52156FA51791BE7500000D44 /* GiveItemsViewController.h */,
+				52156FA61791BE7500000D44 /* GiveItemsViewController.m */,
+				5215705F1792B24800000D44 /* GiveMoneyViewController.h */,
+				521570601792B24800000D44 /* GiveMoneyViewController.m */,
+				5215705C1792A84E00000D44 /* GiveViewController.h */,
+				5215705D1792A84E00000D44 /* GiveViewController.m */,
 				52156FEC1791ECCE00000D44 /* FulfillViewController.h */,
 				52156FED1791ECCE00000D44 /* FulfillViewController.m */,
+				5215705417928C7A00000D44 /* FulfillRequestViewController.h */,
+				5215705517928C7A00000D44 /* FulfillRequestViewController.m */,
+				5215705617928C7A00000D44 /* FulfillRequestViewController.xib */,
+				521570871792E9BE00000D44 /* FulfillOfferViewController.h */,
+				521570881792E9BF00000D44 /* FulfillOfferViewController.m */,
+				521570891792E9C000000D44 /* FulfillOfferViewController.xib */,
 				52156FAC1791BE7500000D44 /* RequestViewController.h */,
 				52156FAD1791BE7500000D44 /* RequestViewController.m */,
 				52156FD01791C26F00000D44 /* PreferencesViewController.h */,
@@ -232,6 +315,8 @@
 		52156F911791BE7500000D44 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				521570851792C09400000D44 /* logoplainlarge.png */,
+				52157049179275DB00000D44 /* Default-568h@2x.png */,
 				52156FF81792106500000D44 /* bread.jpg */,
 				52156FEA1791E3CF00000D44 /* fulfill.png */,
 				52156FE81791CDB900000D44 /* settings.png */,
@@ -341,6 +426,18 @@
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
+		521570621792B3D200000D44 /* PayPalMobile */ = {
+			isa = PBXGroup;
+			children = (
+				521570631792B3D200000D44 /* libPayPalMobile.a */,
+				521570641792B3D200000D44 /* PayPalMobile.h */,
+				521570651792B3D200000D44 /* PayPalPayment.h */,
+				521570661792B3D200000D44 /* PayPalPaymentViewController.h */,
+			);
+			name = PayPalMobile;
+			path = "Hunger No More/PayPalMobile";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -420,6 +517,12 @@
 				52156FEB1791E3CF00000D44 /* fulfill.png in Resources */,
 				52156FF91792106500000D44 /* bread.jpg in Resources */,
 				5215703617921E3400000D44 /* CHANGELOG.md in Resources */,
+				5215704A179275DB00000D44 /* Default-568h@2x.png in Resources */,
+				5215704E17927F9500000D44 /* icon.png in Resources */,
+				521570501792804300000D44 /* iconsmall.png in Resources */,
+				5215705817928C7A00000D44 /* FulfillRequestViewController.xib in Resources */,
+				521570861792C09400000D44 /* logoplainlarge.png in Resources */,
+				5215708B1792E9C000000D44 /* FulfillOfferViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,13 +557,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				521570841792BE6E00000D44 /* QBFlatButton.m in Sources */,
 				52156F971791BE7500000D44 /* main.m in Sources */,
 				52156F9B1791BE7500000D44 /* AppDelegate.m in Sources */,
-				52156FA71791BE7500000D44 /* GiveViewController.m in Sources */,
+				52156FA71791BE7500000D44 /* GiveItemsViewController.m in Sources */,
 				52156FAE1791BE7500000D44 /* RequestViewController.m in Sources */,
 				52156FD21791C26F00000D44 /* PreferencesViewController.m in Sources */,
 				52156FEE1791ECCE00000D44 /* FulfillViewController.m in Sources */,
 				52157048179227EB00000D44 /* mydatamodel.xcdatamodeld in Sources */,
+				5215705717928C7A00000D44 /* FulfillRequestViewController.m in Sources */,
+				5215705E1792A84E00000D44 /* GiveViewController.m in Sources */,
+				521570611792B24800000D44 /* GiveMoneyViewController.m in Sources */,
+				5215708A1792E9C000000D44 /* FulfillOfferViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +577,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52156FC71791BE7500000D44 /* Hunger_No_MoreTests.m in Sources */,
+				521570831792BE2200000D44 /* QBFlatButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,8 +685,13 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/StackMob-v2.0.0\"",
 					"\"$(SDKROOT)/usr/lib/system\"",
+					"\"$(SRCROOT)/Hunger No More/PayPalMobile\"",
+					"\"$(SRCROOT)\"",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -593,8 +707,13 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/StackMob-v2.0.0\"",
 					"\"$(SDKROOT)/usr/lib/system\"",
+					"\"$(SRCROOT)/Hunger No More/PayPalMobile\"",
+					"\"$(SRCROOT)\"",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -653,6 +772,7 @@
 				52156FCC1791BE7500000D44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52156FCD1791BE7500000D44 /* Build configuration list for PBXNativeTarget "Hunger No MoreTests" */ = {
 			isa = XCConfigurationList;
@@ -661,6 +781,7 @@
 				52156FCF1791BE7500000D44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -19,7 +19,7 @@
 {
     // Override point for customization after application launch.
     self.client = [[SMClient alloc] initWithAPIVersion:@"0" publicKey:@"84dd0d8f-c136-46ba-a436-c98393654ae4"];
-    self.client.userSchema = @"request";
+    //self.client.userSchema = @"request";
     //self.client setUserPrimaryKeyField:@"
     self.coreDataStore = [self.client coreDataStoreWithManagedObjectModel:self.managedObjectModel];
     return YES;
