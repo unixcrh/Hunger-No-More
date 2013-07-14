@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Request" syncable="YES">
+        <attribute name="neededbydate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orgaddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orgcity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orgname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orgstate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orgwebsite" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orgzip" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="personname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="request_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="requestdescription" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Request" positionX="160" positionY="192" width="128" height="195"/>
+    </elements>
+</model>
