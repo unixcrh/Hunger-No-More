@@ -37,7 +37,6 @@
 		5215704217921EAA00000D44 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5215704017921EA000000D44 /* SystemConfiguration.framework */; };
 		5215704517921EBD00000D44 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5215704317921EB600000D44 /* MobileCoreServices.framework */; };
 		52157048179227EB00000D44 /* mydatamodel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52157046179227EB00000D44 /* mydatamodel.xcdatamodeld */; };
-		5215704A179275DB00000D44 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52157049179275DB00000D44 /* Default-568h@2x.png */; };
 		5215704E17927F9500000D44 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5215704D17927F9400000D44 /* icon.png */; };
 		521570501792804300000D44 /* iconsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 5215704F1792804300000D44 /* iconsmall.png */; };
 		5215705717928C7A00000D44 /* FulfillRequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5215705517928C7A00000D44 /* FulfillRequestViewController.m */; };
@@ -58,6 +57,7 @@
 		521570861792C09400000D44 /* logoplainlarge.png in Resources */ = {isa = PBXBuildFile; fileRef = 521570851792C09400000D44 /* logoplainlarge.png */; };
 		5215708A1792E9C000000D44 /* FulfillOfferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 521570881792E9BF00000D44 /* FulfillOfferViewController.m */; };
 		5215708B1792E9C000000D44 /* FulfillOfferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 521570891792E9C000000D44 /* FulfillOfferViewController.xib */; };
+		5215708F17931C1600000D44 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5215708E17931C1600000D44 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,7 +161,6 @@
 		5215704017921EA000000D44 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		5215704317921EB600000D44 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		52157047179227EB00000D44 /* mydatamodel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = mydatamodel.xcdatamodel; sourceTree = "<group>"; };
-		52157049179275DB00000D44 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		5215704D17927F9400000D44 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		5215704F1792804300000D44 /* iconsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconsmall.png; sourceTree = "<group>"; };
 		5215705417928C7A00000D44 /* FulfillRequestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FulfillRequestViewController.h; sourceTree = "<group>"; };
@@ -190,6 +189,7 @@
 		521570871792E9BE00000D44 /* FulfillOfferViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FulfillOfferViewController.h; sourceTree = "<group>"; };
 		521570881792E9BF00000D44 /* FulfillOfferViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FulfillOfferViewController.m; sourceTree = "<group>"; };
 		521570891792E9C000000D44 /* FulfillOfferViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FulfillOfferViewController.xib; sourceTree = "<group>"; };
+		5215708E17931C1600000D44 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +235,7 @@
 		52156F7E1791BE7500000D44 = {
 			isa = PBXGroup;
 			children = (
+				5215708E17931C1600000D44 /* Default-568h@2x.png */,
 				521570811792BE2200000D44 /* QBFlatButton.h */,
 				521570821792BE2200000D44 /* QBFlatButton.m */,
 				5215706A1792B43D00000D44 /* libPayPalMobile.a */,
@@ -316,7 +317,6 @@
 			isa = PBXGroup;
 			children = (
 				521570851792C09400000D44 /* logoplainlarge.png */,
-				52157049179275DB00000D44 /* Default-568h@2x.png */,
 				52156FF81792106500000D44 /* bread.jpg */,
 				52156FEA1791E3CF00000D44 /* fulfill.png */,
 				52156FE81791CDB900000D44 /* settings.png */,
@@ -517,12 +517,12 @@
 				52156FEB1791E3CF00000D44 /* fulfill.png in Resources */,
 				52156FF91792106500000D44 /* bread.jpg in Resources */,
 				5215703617921E3400000D44 /* CHANGELOG.md in Resources */,
-				5215704A179275DB00000D44 /* Default-568h@2x.png in Resources */,
 				5215704E17927F9500000D44 /* icon.png in Resources */,
 				521570501792804300000D44 /* iconsmall.png in Resources */,
 				5215705817928C7A00000D44 /* FulfillRequestViewController.xib in Resources */,
 				521570861792C09400000D44 /* logoplainlarge.png in Resources */,
 				5215708B1792E9C000000D44 /* FulfillOfferViewController.xib in Resources */,
+				5215708F17931C1600000D44 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

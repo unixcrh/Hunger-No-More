@@ -642,7 +642,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fOI-dD-ztm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="404" y="1096"/>
+            <point key="canvasLocation" x="284" y="1604"/>
         </scene>
         <!--Fulfill View Controller - Fulfill-->
         <scene sceneID="ioV-Zp-kk3">
@@ -712,7 +712,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gdu-dc-8S0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="779" y="1383"/>
+            <point key="canvasLocation" x="723" y="1355"/>
         </scene>
         <!--Request View Controller - Request-->
         <scene sceneID="13">
@@ -1023,7 +1023,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <class className="FulfillViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FulfillViewController.h"/>
             <relationships>
-                <relationship kind="action" name="changed:"/>
                 <relationship kind="outlet" name="list" candidateClass="UITableView"/>
                 <relationship kind="outlet" name="map" candidateClass="MKMapView"/>
                 <relationship kind="outlet" name="typeControl" candidateClass="UISegmentedControl"/>
